@@ -32,6 +32,6 @@ function myfunc() {
     s = s.replace(/\bman\b/g, "person");
     s = s.replace(/\b(wo)?men\b/g, "people");
 
-    document.getElementById("print_p").innerHTML = text;
+    document.getElementById("print_p").innerHTML = s;
 
 }
