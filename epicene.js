@@ -27,6 +27,23 @@ function myfunc() {
     s = s.replace(/\b(Aunt|Uncle)/g, "Auncle");
     s = s.replace(/\b(N|n)(iece|ephew)/g, "$1ibling");
 
+    s = s.replace(/\bher$/g, "them");
+    s = s.replace(/ing her\b/g, "ing them");
+    s = s.replace(/\b(s)?he\b/g, "they");
+    s = s.replace(/\b(s)?he\b/g, "they");
+    s = s.replace(/\bHe\b/g, "They");
+    s = s.replace(/\bShe\b/g, "They");
+    s = s.replace(/\bhers\b/g, "theirs");
+    s = s.replace(/\bHers\b/g, "Theirs");
+    s = s.replace(/\bhim\b/g, "them");
+    s = s.replace(/\bHim\b/g, "Them");
+    s = s.replace(/\bHis\b/g, "Their");
+    s = s.replace(/\bhis\b/g, "their");
+    s = s.replace(/\bher\b/g, "their");
+    s = s.replace(/\bHer\b/g, "Their");
+    s = s.replace(/\bhimself\b/g, "themselves");
+    s = s.replace(/\bherself\b/g, "themselves");
+
     s = s.replace(/\ba (wo)?man\b/g, "an individual");
     s = s.replace(/\bA (wo)?man\b/g, "An individual");
     s = s.replace(/\bWoman\b/g, "Individual");
